@@ -1,16 +1,19 @@
 # english_cards
 
-A new Flutter application.
+Flutterで作ったサンプルアプリです。
+それぞれの使い方については、公式のドキュメントを参照してください。
 
-## Getting Started
+このアプリはそのままは動かせません。このアプリをテストするためには以下の手順を踏んでください。
 
-This project is a starting point for a Flutter application.
+1. Oxford Dictionaries APIからAppIdとAppKeyを取得(https://developer.oxforddictionaries.com/)
+2. `lib/OxfordDictionary.dart`内の`appId`,`appKey`を変更
 
-A few resources to get you started if this is your first Flutter project:
+```dart
+/* 省略 */
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+final _language = "en-us";
+final _appId = "<your app id>";  //ここを書き換える
+final _appKey = "<your app key>";  //ここを書き換える
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+/* 省略 */
+```
